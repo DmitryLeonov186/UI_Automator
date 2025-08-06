@@ -41,7 +41,7 @@ jobs:
       
     - name: run tests
       uses: reactivecircus/android-emulator-runner@v2
-      timeout-minutes: 1
+      timeout-minutes: 10
       with:
         api-level: 29
         script: ./gradlew connectedCheck
