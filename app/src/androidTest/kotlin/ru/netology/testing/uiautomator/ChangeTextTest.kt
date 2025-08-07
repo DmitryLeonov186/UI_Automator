@@ -142,7 +142,7 @@ class ChangeTextTest {
         waitForPackage(appPackageName)
 
         val displayedText = device.findObject(By.res(appPackageName, "text")).text
-        
+
         assertEquals(displayedText, textToSet)
     }
 
